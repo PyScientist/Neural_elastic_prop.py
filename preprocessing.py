@@ -88,7 +88,7 @@ class TrainedNets:
 
         self.prepare_data_for_train()
 
-        self.model1 = self.train_and_validate_model(self.X1, self.y1, 'MLPRegressor', (500))
+        self.model1 = self.train_and_validate_model(self.X1, self.y1, 'MLPRegressor', (300))
         self.model2 = self.train_and_validate_model(self.X2, self.y2, 'MLPRegressor', (64))
 
     def prepare_data_for_train(self):

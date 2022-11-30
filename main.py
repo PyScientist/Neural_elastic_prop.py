@@ -19,15 +19,13 @@ def main():
         metrics2 = (trained_nets.model2['r2_score'], trained_nets.model2['RMSE'], trained_nets.model2['MAE'])
         LoadingAndPreparingNetDialog.processed(metrics1, metrics2)
 
-
-
         LoadingAndPreparingNetDialog.chose_processing_data()
         data_path = input('Введите путь к файлу с данными для обработки:')
 
         predicting1_init = ProcessedData(data_path, trained_nets.model1, 'Модуль упругости при растяжении')
         predicting1_init.predict()
 
-        predicting2_init = ProcessedData(data_path, trained_nets, 'Прочность при растяжении')
+        predicting2_init = ProcessedData(data_path, trained_nets.model2, 'Прочность при растяжении')
         predicting2_init.predict()
         break
 

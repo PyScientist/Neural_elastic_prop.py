@@ -13,7 +13,7 @@ class ProcessedData:
 
     def predict(self):
         self.y_pred = self.model['model'].predict(self.X)
-        print(f'Получен следующий массив результирующих данных по модели для парамметра: {self.parameter}')
+        print(f'Получен следующий массив результирующих данных по модели для параметра: {self.parameter}')
         print(list(self.y_pred))
 
 

@@ -73,7 +73,7 @@ class LoadingAndPreparingNetDialog:
     def processed(metrics1, metrics2):
         print('\nТренировка моделей выполнена!!! Можно переходить к прогнозированию')
         print(f'Метрики модели для прогнозирования модуля упругости при растяжении: RMSE = {metrics1[1].round(2)}, MAE = {metrics1[2].round(2)}')
-        print(f'етрики модели для прогнозирования прочности при растяжении: RMSE = {metrics2[1].round(2)}, MAE = {metrics2[2].round(2)}')
+        print(f'Метрики модели для прогнозирования прочности при растяжении: RMSE = {metrics2[1].round(2)}, MAE = {metrics2[2].round(2)}')
         PlatformTool().next_key_tool()
 
     @staticmethod
